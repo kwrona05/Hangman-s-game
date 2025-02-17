@@ -10,7 +10,7 @@ while points > 0:
     option = input('Choose an option (1/2): ')
 
     if option == '1':
-        user_char = input('Enter the char')
+        user_char = input('Enter the char: ')
         for char in word_to_guess:
             if char == user_char:
                 print(f'{user_char} is in the word')
@@ -21,7 +21,7 @@ while points > 0:
                 print(f'Points left: {points}')
                 break
     elif option == '2':
-        user_word = input('Enter the word')
+        user_word = input('Enter the word: ')
         if user_word == word_to_guess:
             print('Congrats, you win')
             break
